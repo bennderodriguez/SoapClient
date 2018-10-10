@@ -5,6 +5,7 @@
 <div class="clearfix">
     <span class="float-right text-muted">RockJS 1.0.0 <i class="pe-7s-science"></i></span>
 </div>
+<!-- Side menu JS -->
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "150px";
@@ -31,16 +32,30 @@
 <script src="asset/js/vfs_fonts.js"></script>
 <script src="asset/js/buttons.html5.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
 </script>
+<!-- Loader GIF JS -->
 <script type="text/javascript" src="asset/js/loader.js"></script>
 
 <!-- Web Service Login -->
 <script src="asset/js/validator.min.js"></script>
 <script src="asset/js/form-scripts.js"></script>
 
-
+<!-- Draggable JS -->
+<script src="asset/draggable-ui/jquery-ui.js"></script>
+<script src="asset/draggable-ui/lodash.js"></script>
+<script src="asset/draggable-ui/gridstack.js"></script>
+<script src="asset/draggable-ui/gridstack.jQueryUI.js"></script>
+<script src="asset/draggable-ui/jquery.ui.touch-punch.js"></script>
+<script>
+    $(function () {
+        var options = {
+            alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+        };
+        $('.grid-stack').gridstack(options);
+    });
+</script>
 </body>
 </html>

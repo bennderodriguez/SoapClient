@@ -1,24 +1,27 @@
 <?php include './headers.php'; ?>
+<!-- Sign up form -->
 
-<div class="container" style="margin-top: 1em;">
-    <!-- Sign up form -->
-    <form role="form" id="contactForm" data-toggle="validator" class="shake">
-        <!-- Sign up card -->
-        <div class="card person-card">
-            <div class="card-body">
-                <!-- Sex image -->
-                <img id="img_sex" class="person-img"
-                     src="https://visualpharm.com/assets/725/Add%20Shopping%20Cart-595b40b65ba036ed117d36f4.svg" width="70%">
-                <h4 id="who_message" class="card-title">Buy here!</h4>
-                <!-- First row (on medium screen) -->
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
+<!-- Sign up card -->
+<div class="card person-card">
+    <div class="card-body">
+        <!-- Sex image -->
+        <img id="img_sex" class="person-img"
+             src="https://visualpharm.com/assets/725/Add%20Shopping%20Cart-595b40b65ba036ed117d36f4.svg" width="70%">
+        <h4 id="who_message" class="card-title">Buy here!</h4>
+        <!-- First row (on medium screen) -->
+    </div>
+</div>
+<form role="form" id="contactForm" data-toggle="validator" class="shake">
+    <div class="grid-stack">
+        <div class="grid-stack-item"
+             data-gs-x="0" data-gs-y="0"
+             data-gs-width="6" data-gs-height="12">
+            <div class="grid-stack-item-content">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-header">
                         <h4 class="card-title">Business Data</h4>
+                    </div>
+                    <div class="card-body">
                         <div class="form-group">
                             <label for="Kunnr" class="col-form-label">Kunnr</label>
                             <input type="text" class="form-control form-control-sm" id="Kunnr"  required value="1">
@@ -93,10 +96,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+        </div>
+        <div class="grid-stack-item"
+             data-gs-x="6" data-gs-y="0"
+             data-gs-width="6" data-gs-height="12">
+            <div class="grid-stack-item-content">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-header">
                         <h4 class="card-title">Item Data</h4>
+                    </div>
+                    <div class="card-body">
                         <div class="form-group">
                             <label for="Maktx" class="col-form-label">Maktx</label>
                             <input type="text" class="form-control form-control-sm" id="Maktx" required value="1">
@@ -166,12 +175,13 @@
                 </div>
             </div>
         </div>
-        <div style="margin-top: 1em;">
-            <div id="msgSubmit" class="h3 text-center hidden"></div>
-            <div class="clearfix"></div>
-            <button type="submit" id="form-submit" class="btn btn-primary btn-lg btn-block">Sign up !</button>
-        </div>
-    </form>
-</div>
+    </div>
+    <div style="margin-top: 1em;">
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+        <button type="submit" id="form-submit" class="btn btn-primary btn-lg btn-block">Sign up !</button>
+    </div>
+</form>
+
 <?php include './footer.php'; ?>
 

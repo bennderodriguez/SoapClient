@@ -7,14 +7,30 @@ and open the template in the editor.
     Created on : 8/03/2018, 10:52:30 AM
     Author     : Focus on Services
 */
+/*
+Dragable pannel rocksj
+*/
+
+#rockjsDragable .panel-heading {
+    cursor: move;
+}
+
+.grid-stack-item {
+    cursor: move;
+}
+
+
+.grid-stack-item:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 
 body {
     background-color: #e9ebee;
 }
 
-.card {
+/*.card {
     margin-top: 1em;
-}
+}*/
 
 /* IMG displaying */
 .person-card {
@@ -233,5 +249,5 @@ input:checked + .slider:before {
 {
     .mn-rigth{display: none}
     .mn-left{display: flex}
-    
+
 }

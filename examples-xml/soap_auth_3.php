@@ -1,8 +1,8 @@
 <?php
 /**
- * EJEMPLO DE CONSUMO DE INSERCION DE SAP
- * EXITOSA
- * 
+ * Consumo soap SAP PHP
+ * Ing. Bernabe Gutierrez Rodriguez
+ * 03/10/2018
  */
 #Define Authentication 
 $SOAP_AUTH = array('login' => 'webservice',
